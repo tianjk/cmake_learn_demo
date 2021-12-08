@@ -1,0 +1,3 @@
+/home/tjk/CLionProjects/cmake_demo/demo2/build/CMakeFiles/rebuild_cache.dir
+/home/tjk/CLionProjects/cmake_demo/demo2/build/CMakeFiles/edit_cache.dir
+/home/tjk/CLionProjects/cmake_demo/demo2/build/CMakeFiles/demo_2.dir

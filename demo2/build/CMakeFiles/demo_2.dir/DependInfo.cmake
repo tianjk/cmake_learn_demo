@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tjk/CLionProjects/cmake_demo/demo1/main.cpp" "/home/tjk/CLionProjects/cmake_demo/demo1/build/CMakeFiles/cmake_demoxxx.dir/main.cpp.o"
+  "/home/tjk/CLionProjects/cmake_demo/demo2/main.cpp" "/home/tjk/CLionProjects/cmake_demo/demo2/build/CMakeFiles/demo_2.dir/main.cpp.o"
+  "/home/tjk/CLionProjects/cmake_demo/demo2/src/say_hello.cpp" "/home/tjk/CLionProjects/cmake_demo/demo2/build/CMakeFiles/demo_2.dir/src/say_hello.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   )
 
 # Targets to which this target links.
