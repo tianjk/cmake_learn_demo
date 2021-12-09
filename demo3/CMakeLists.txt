@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.16)
+project(demo3)
+
+#include_directories(/usr/local/include/opencv4)
+#include_directories(/usr/local/include/opencv4/opencv2)
+
+#link_directories(/usr/local/lib)
+find_package(OpenCV REQUIRED core highgui imgproc imgcodecs)
+if (OPENCV_FOUND)
+    message(STATUS "找到OpenCV:\"${OpenCV_INCLUDE_DIRS}\",ENABLE_OPENCV宏已打开")
+    message(STATUS "找到OpenCV:\"${OpenCV_LIBS}\"")
+    include_directories(${OpenCV_INCLUDE_DIRS})
+    add_definitions(-DENABLE_OPENCV)
+    list(APPEND LINK_LIB_LIST ${OpenCV_LIBS})
+    message(${LINK_LIB_LIST})
+endif (OPENCV_FOUND)
+add_executable(opencv_demo main.cpp)
+target_link_libraries(opencv_demo ${OpenCV_LIBS})
+#cmake_minimum_required(VERSION 3.16)
+#project(demo3)
+#
+#include_directories(/usr/local/include/opencv4)
+#include_directories(/usr/local/include/opencv4/opencv2)
+#
+#set(lib_path /usr/local/lib)
+#link_directories(${lib_path})
+#file(GLOB LIBS "${lib_path}/libopencv*.so")
+#
+#add_executable(opencv_demo main.cpp)
+#target_link_libraries(opencv_demo ${LIBS})
